@@ -10,7 +10,8 @@
       home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
       #nvf
-
+      nvf.url = "github:notashelf/nvf";
+      nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     };
 

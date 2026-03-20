@@ -9,5 +9,6 @@
     ../modules/apps
     ../modules/vscode
     ../modules/git
+    ../modules/nvfvim
   ];
 }
