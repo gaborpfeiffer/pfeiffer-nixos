@@ -3,7 +3,7 @@
   imports = [
     ./hardware-configuration.nix
     ../common/base.nix
-    ../features/cosmic.nix
+    ../features/kde.nix
   ];
   networking.hostName = "thinky";
 }

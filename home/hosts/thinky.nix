@@ -10,5 +10,6 @@
     ../modules/vscode
     ../modules/git
     ../modules/nvfvim
+    ../modules/programing
   ];
 }
