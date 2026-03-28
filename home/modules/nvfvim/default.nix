@@ -75,6 +75,27 @@
             action = ":Neotree focus<CR>";
             silent = true;
           }
+          #telescope
+          {
+            mode = "n";
+            key = "<leader>ff";
+            action = "<cmd>Telescope find_files<CR>";
+          }
+          {
+            mode = "n";
+            key = "<leader>fg";
+            action = "<cmd>Telescope live_grep<CR>";
+          }
+          {
+            mode = "n";
+            key = "<leader>fb";
+            action = "<cmd>Telescope buffers<CR>";
+          }
+          {
+            mode = "n";
+            key = "<leader>fh";
+            action = "<cmd>Telescope help_tags<CR>";
+          }
         ];
 
         # auto pairs
@@ -115,6 +136,25 @@
             };
           };
         };
+
+/*        visuals = {
+          indent-blankline = {
+            enable = true;
+            setupOpts = {
+              indent = {
+                char = "▏";
+                tab_char = "▏";
+              };
+              scope = {
+                enabled = true;
+                show_start = true;
+                show_end = false;
+              };
+            };
+          };
+          nvim-web-devicons.enable = true;
+        };
+*/
         
 
         # Plugins
@@ -129,6 +169,70 @@
             };
           };
         };
+
+
+        statusline.lualine = {
+          enable = true;
+          theme = "everforest";
+          sectionSeparator = { left = ""; right = ""; };
+          componentSeparator = { left = ""; right = ""; };
+        };
+
+        telescope = {
+          enable = true;
+          extensions = [
+            {
+              name = "fzf";
+              packages = [ pkgs.vimPlugins.telescope-fzf-native-nvim ];
+              setup = {
+                fzf = {
+                  fuzzy = true;
+                  override_file_sorter = true;
+                  override_generic_sorter = true;
+                  case_mode = "smart_case";
+                };
+              };
+            }
+          ];
+          setupOpts = {
+            defaults = {
+              layout_config.horizontal.prompt_position = "top";
+              sorting_strategy = "ascending";
+            };
+            pickers.find_files.hidden = true;
+          };
+        };
+
+        terminal.toggleterm = {
+          enable = true;
+          lazygit = {
+            enable = true;
+            mappings.open = "<leader>lg";
+          };
+        };
+
+        dashboard.dashboard-nvim = {
+          enable = true;
+          setupOpts = {
+            theme = "doom";
+            config = {
+              header = [
+                "┌───────────────────────────┐"
+                "│   Welcome back!     │"
+                "└───────────────────────────┘"
+              ];
+              center = [
+                { icon = " "; desc = "Find file"; key = "f"; action = "Telescope find_files"; }
+                { icon = " "; desc = "Live grep"; key = "g"; action = "Telescope live_grep"; }
+                { icon = " "; desc = "File tree"; key = "e"; action = "NvimTreeToggle"; }
+                { icon = " "; desc = "Quit"; key = "q"; action = "qa"; }
+              ];
+              footer = [ "Tip: press ? for which-key" ];
+            };
+          };
+        };
+      
+
       };
     };
   };
