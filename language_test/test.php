@@ -23,11 +23,11 @@ class Employee
     {
     }
 
-    public function addAndEcho()
+    public function addAndEcho(): void
     {
         echo 1 + 1;
     }
-}
 
+}
 
 test();

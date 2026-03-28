@@ -9,8 +9,7 @@
       vim = {
         viAlias = true;
         vimAlias = true;
-
-       
+               
         globals.mapleader = " ";
 
         options = {
@@ -96,6 +95,12 @@
             key = "<leader>fh";
             action = "<cmd>Telescope help_tags<CR>";
           }
+          #trouble
+          {
+            mode = "n";
+            key = "<leader>xx";
+            action = "<cmd>Trouble diagnostics toggle<CR>";
+          }
         ];
 
         # auto pairs
@@ -122,7 +127,13 @@
           ];
         };
 
-        # LSP servers
+        # LSP config
+        lsp = {
+          enable = true;
+          trouble = {
+            enable = true;
+          };
+        };
         languages = {
           nix.enable = true;
           json.enable = true;
@@ -208,6 +219,18 @@
           lazygit = {
             enable = true;
             mappings.open = "<leader>lg";
+          };
+        };
+
+        git.gitsigns = {
+          enable = true;
+          setupOpts = {
+            attach_to_untracked = true;
+            current_line_blame = true;
+            current_line_blame_opts = {
+              delay = 0;
+              virt_text_pos = "eol";
+            };
           };
         };
 
