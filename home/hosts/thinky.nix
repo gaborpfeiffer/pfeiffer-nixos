@@ -11,5 +11,6 @@
     ../modules/git
     ../modules/nvfvim
     ../modules/programing
+    ../modules/plasma_manager/thinky
   ];
 }
