@@ -173,7 +173,7 @@
 
         statusline.lualine = {
           enable = true;
-          theme = "everforest";
+          theme = "tokyonight";
           sectionSeparator = { left = ""; right = ""; };
           componentSeparator = { left = ""; right = ""; };
         };
@@ -230,6 +230,12 @@
               footer = [ "Tip: press ? for which-key" ];
             };
           };
+        };
+        
+        theme = {
+          enable = true;
+          name = "tokyonight";
+          style = "moon";
         };
       
 
