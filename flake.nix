@@ -54,6 +54,11 @@
             homeHost = ./home/hosts/thinky.nix;
             hmUser = "pfeiffer";
           };
+          worky = makeHost {
+            hostName = "worky";
+            homeHost = ./home/hosts/worky.nix;
+            hmUser = "pfeiffer";
+          };
         };
       };
 }

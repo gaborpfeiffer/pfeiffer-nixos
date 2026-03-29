@@ -6,6 +6,7 @@
     text = ''
       alias gst="git status"
       alias rebuild-thinky="sudo nixos-rebuild switch --flake path:/home/pfeiffer/Projects/pfeiffer-nixos#thinky"
+      alias rebuild-worky="sudo nixos-rebuild switch --flake path:/home/pfeiffer/Projects/pfeiffer-nixos#worky"
       alias pfeiffer-update-flake="nix flake update"
       alias pfeiffer-garbage-collect="sudo nix-collect-garbage -d"
     '';
