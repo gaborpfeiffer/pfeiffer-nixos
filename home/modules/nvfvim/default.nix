@@ -163,8 +163,9 @@
           };
         };
 
-/*        visuals = {
-          indent-blankline = {
+        visuals = {
+          nvim-web-devicons.enable = true;
+          /*indent-blankline = {
             enable = true;
             setupOpts = {
               indent = {
@@ -177,10 +178,8 @@
                 show_end = false;
               };
             };
-          };
-          nvim-web-devicons.enable = true;
+          };*/
         };
-*/
         
 
         # Plugins
@@ -256,13 +255,13 @@
             config = {
               header = [
                 "┌───────────────────────────┐"
-                "│   Welcome back!     │"
+                "│       Welcome back!       │"
                 "└───────────────────────────┘"
               ];
               center = [
                 { icon = " "; desc = "Find file"; key = "f"; action = "Telescope find_files"; }
                 { icon = " "; desc = "Live grep"; key = "g"; action = "Telescope live_grep"; }
-                { icon = " "; desc = "File tree"; key = "e"; action = "NvimTreeToggle"; }
+                { icon = " "; desc = "File tree"; key = "e"; action = "Neotree toggle"; }
                 { icon = " "; desc = "Quit"; key = "q"; action = "qa"; }
               ];
               footer = [ "Tip: press ? for which-key" ];

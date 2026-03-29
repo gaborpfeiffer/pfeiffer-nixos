@@ -4,7 +4,6 @@
       
       # core
       ripgrep
-      alacritty
 
       # desktop
       google-chrome
