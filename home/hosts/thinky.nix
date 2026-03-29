@@ -13,5 +13,6 @@
     ../modules/programing
     ../modules/plasma_manager/thinky
     ../modules/alacritty
+    ../modules/bash
   ];
 }
