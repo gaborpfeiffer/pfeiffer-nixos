@@ -103,6 +103,13 @@
           }
         ];
 
+        # auto complete
+        autocomplete = {
+          nvim-cmp = {
+            enable = true;
+          };
+        };    
+
         # auto pairs
         autopairs.nvim-autopairs.enable = true;
 

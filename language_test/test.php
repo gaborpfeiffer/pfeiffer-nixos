@@ -3,7 +3,7 @@
 // treesitter highlight - ok
 // php-cs-fixer - ok
 // lsp errors - ok
-// lsp display errors - nok
+// lsp display errors - ok
 // phpstan error displays - ???
 
 $test = 'lau_gab';
@@ -31,3 +31,6 @@ class Employee
 }
 
 test();
+
+$t = new Employee();
+$t->addAndEcho();
