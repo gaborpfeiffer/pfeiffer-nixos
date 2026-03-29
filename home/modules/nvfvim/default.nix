@@ -95,6 +95,11 @@
             key = "<leader>fh";
             action = "<cmd>Telescope help_tags<CR>";
           }
+          {
+            mode = "n";
+            key = "<leader>/";
+            action = "<cmd>Telescope current_buffer_fuzzy_find<CR>";
+          }
           #trouble
           {
             mode = "n";
