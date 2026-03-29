@@ -8,5 +8,8 @@
       # desktop
       google-chrome
       opencode
+
+
+      jetbrains.phpstorm
   ];
 }
