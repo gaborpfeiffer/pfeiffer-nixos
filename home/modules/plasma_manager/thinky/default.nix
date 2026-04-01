@@ -1,4 +1,4 @@
-{inputs,pkgs,lib,...}:
+{inputs,...}:
 {
   imports = [
     inputs.plasma-manager.homeManagerModules.plasma-manager
@@ -215,9 +215,9 @@
       plasmashell."activate task manager entry 4" = "Ctrl+F4";
       plasmashell."activate task manager entry 5" = "Ctrl+F5";
       plasmashell."activate task manager entry 6" = "Ctrl+F6";
-      plasmashell."activate task manager entry 7" = "Ctrl+F7";
+      plasmashell."activate task manager entry 7" = [ ];
       plasmashell."activate task manager entry 8" = "Ctrl+F8";
-      plasmashell."activate task manager entry 9" = "Ctrl+F9";
+      plasmashell."activate task manager entry 9" = [ ];
       plasmashell.clear-history = [ ];
       plasmashell.clipboard_action = "Meta+Ctrl+X";
       plasmashell.cycle-panels = "Meta+Alt+P";
@@ -244,7 +244,23 @@
       dolphinrc."KFileDialog Settings"."Places Icons Static Size" = 22;
       kactivitymanagerdrc.activities."889e1058-63ca-4334-8ef5-129d1db1cf47" = "Default";
       kactivitymanagerdrc.main.currentActivity = "889e1058-63ca-4334-8ef5-129d1db1cf47";
+      kded5rc.Module-browserintegrationreminder.autoload = false;
       kded5rc.Module-device_automounter.autoload = false;
+      kdeglobals."KFileDialog Settings"."Allow Expansion" = false;
+      kdeglobals."KFileDialog Settings"."Automatically select filename extension" = true;
+      kdeglobals."KFileDialog Settings"."Breadcrumb Navigation" = true;
+      kdeglobals."KFileDialog Settings"."Decoration position" = 2;
+      kdeglobals."KFileDialog Settings"."Show Full Path" = false;
+      kdeglobals."KFileDialog Settings"."Show Inline Previews" = true;
+      kdeglobals."KFileDialog Settings"."Show Preview" = false;
+      kdeglobals."KFileDialog Settings"."Show Speedbar" = true;
+      kdeglobals."KFileDialog Settings"."Show hidden files" = false;
+      kdeglobals."KFileDialog Settings"."Sort by" = "Name";
+      kdeglobals."KFileDialog Settings"."Sort directories first" = true;
+      kdeglobals."KFileDialog Settings"."Sort hidden files last" = false;
+      kdeglobals."KFileDialog Settings"."Sort reversed" = false;
+      kdeglobals."KFileDialog Settings"."Speedbar Width" = 140;
+      kdeglobals."KFileDialog Settings"."View Style" = "DetailTree";
       kdeglobals.WM.activeBackground = "39,44,49";
       kdeglobals.WM.activeBlend = "252,252,252";
       kdeglobals.WM.activeForeground = "252,252,252";
@@ -263,13 +279,13 @@
       kwinrc.Desktops.Number = 4;
       kwinrc.Desktops.Rows = 2;
       kwinrc.Tiling.padding = 4;
-      kwinrc."Tiling/0b9d1448-105f-4e4b-8a5f-e11041740aaf/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/61056a0c-8862-4b24-8dee-5b179bfa33b0/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/6a6c10cb-90c7-4256-84f9-d1de28d22b57/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/6a6c10cb-90c7-4256-84f9-d1de28d22b57/3fff3e92-d76b-463e-beb9-9959d01e9805".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/727969c3-ae9a-4b11-93a9-e71411532ba8/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/a35f55b2-b8fa-42ba-8f7d-17b82e16c000/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/ca83d8d6-cba5-43c8-94d0-1e4205e1a669/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/0b9d1448-105f-4e4b-8a5f-e11041740aaf/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/61056a0c-8862-4b24-8dee-5b179bfa33b0/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/6a6c10cb-90c7-4256-84f9-d1de28d22b57/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/6a6c10cb-90c7-4256-84f9-d1de28d22b57/3fff3e92-d76b-463e-beb9-9959d01e9805".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/727969c3-ae9a-4b11-93a9-e71411532ba8/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/a35f55b2-b8fa-42ba-8f7d-17b82e16c000/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      kwinrc."Tiling/ca83d8d6-cba5-43c8-94d0-1e4205e1a669/3a9deb73-4663-4d48-9fb1-380d1f7163c6".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
       kwinrc.Xwayland.Scale = 1;
       kwinrulesrc.General.count = 1;
       kwinrulesrc.General.rules = "e8c9c5b6-2abe-42a4-90f3-688d65fae90b";
@@ -284,6 +300,9 @@
       kwinrulesrc.e8c9c5b6-2abe-42a4-90f3-688d65fae90b.wmclasscomplete = true;
       kwinrulesrc.e8c9c5b6-2abe-42a4-90f3-688d65fae90b.wmclassmatch = 1;
       plasma-localerc.Formats.LANG = "en_US.UTF-8";
+      spectaclerc.ImageSave.lastImageSaveLocation = "file:///home/pfeiffer/Screenshot_20260329_130358.png";
+      spectaclerc.ImageSave.translatedScreenshotsFolder = "Screenshots";
+      spectaclerc.VideoSave.translatedScreencastsFolder = "Screencasts";
     };
     dataFile = {
 
