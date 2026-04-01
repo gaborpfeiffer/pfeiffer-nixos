@@ -126,6 +126,7 @@
             callback = lib.generators.mkLuaInline ''
               function()
                 require("conform").format({async = false})
+                require("lint").try_lint()
               end
             '';
           }
@@ -150,6 +151,24 @@
                 [vim.diagnostic.severity.WARN] = "󰀪 ",
               }
             '';
+          };
+          
+          #nvim-lint
+          nvim-lint = {
+            enable = true;
+            
+            linters_by_ft = {
+              php = ["phpstan"];
+            };
+            /*linters = {
+              phpstan = {
+               append_fname = true; 
+               args = [
+                "analyse"
+                "-l 9"
+               ];
+              };
+            };*/
           };
         };
 

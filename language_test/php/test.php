@@ -4,12 +4,13 @@
 // php-cs-fixer - ok
 // lsp errors - ok
 // lsp display errors - ok
-// phpstan error displays - ???
+// phpstan error displays - ok
 
 $test = 'lau_gab';
 
 function test($param)
 {
+
     if ($param === 'gab') {
         echo '1';
     } else {
@@ -23,12 +24,13 @@ class Employee
     {
     }
 
-    public function addAndEcho()
+    public function addAndEcho(): void
     {
         echo 1 + 1;
     }
 
 }
+
 
 test();
 
