@@ -122,7 +122,11 @@
         autocmds = [
           {
             event = ["BufWritePre"];
-            pattern = ["*.php"];
+            pattern = [
+              "*.php"
+              "*.ts"
+              "*.tsx"
+            ];
             callback = lib.generators.mkLuaInline ''
               function()
                 require("conform").format({async = false})
@@ -137,6 +141,8 @@
           enable = true;
           grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
             php
+            typescript
+            tsx
           ];
         };
       
@@ -183,6 +189,18 @@
         languages = {
           nix.enable = true;
           json.enable = true;
+          
+          # typescript
+          ts = {
+            enable = true;
+            lsp.enable = true;
+            treesitter.enable = true;
+            format = {
+              enable = true;
+            };
+          };
+
+          # php
           php = {
             enable = true;
             lsp.enable = true;
