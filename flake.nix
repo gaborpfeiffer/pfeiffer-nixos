@@ -12,6 +12,8 @@
       #nvf
       nvf.url = "github:notashelf/nvf";
       nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
+      #nvf config
+      pfeiffer-nvf.url = "github:gaborpfeiffer/pfeiffer-nvf";
 
       #plasma-manager
       plasma-manager.url = "github:nix-community/plasma-manager";
