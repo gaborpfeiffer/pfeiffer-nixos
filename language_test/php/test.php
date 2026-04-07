@@ -36,3 +36,4 @@ test();
 
 $t = new Employee();
 $t->addAndEcho();
+$t2 = new Employee();

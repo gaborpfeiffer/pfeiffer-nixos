@@ -289,11 +289,11 @@
         "nvf": "nvf_2"
       },
       "locked": {
-        "lastModified": 1775465033,
-        "narHash": "sha256-vRMlhiyaYIQgo8wPdAao/4XqKQMxS5uF6/FlyCTkf5g=",
+        "lastModified": 1775580100,
+        "narHash": "sha256-aIXgMJUK/iyAhk0e2HA1Aaasn6Z/fYoMkIMK04qQy5M=",
         "owner": "gaborpfeiffer",
         "repo": "pfeiffer-nvf",
-        "rev": "cb9961c431051efa376e9604fbee20d57c060bb1",
+        "rev": "d955cb7277e784f277be74cf4e9577291e9a75d6",
         "type": "github"
       },
       "original": {
