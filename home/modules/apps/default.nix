@@ -7,6 +7,7 @@
 
       # desktop
       google-chrome
+      firefox
       opencode
   ];
 }
